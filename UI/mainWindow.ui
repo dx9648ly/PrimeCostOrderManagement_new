@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1458</width>
+    <height>1016</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>永锋原价管理程序</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="main_resources.qrc">
+    <normaloff>:/ico/resources/ICO/MainWindow.png</normaloff>:/ico/resources/ICO/MainWindow.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">alternate-background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_background_image">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="image_resources.qrc">:/image/resources/Image/background1.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1458</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">selection-background-color: rgb(0, 124, 182);
+selection-color: rgb(0, 170, 127);
+color: rgb(52, 104, 156);</string>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actFile_New"/>
+    <addaction name="separator"/>
+    <addaction name="actFile_Save"/>
+    <addaction name="actFile_SaveAsExcl"/>
+    <addaction name="separator"/>
+    <addaction name="actFile_LogOff"/>
+   </widget>
+   <widget class="QMenu" name="menu_query">
+    <property name="title">
+     <string>查询(&amp;Q)</string>
+    </property>
+    <addaction name="actQuery"/>
+    <addaction name="actQuery_Export"/>
+   </widget>
+   <widget class="QMenu" name="menu_set">
+    <property name="title">
+     <string>设置(&amp;S)</string>
+    </property>
+    <addaction name="actSet_Customer"/>
+    <addaction name="separator"/>
+    <addaction name="actSet_Material"/>
+    <addaction name="actSet_Process"/>
+    <addaction name="actSet_Pack"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_about">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actHelp_About"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_query"/>
+   <addaction name="menu_set"/>
+   <addaction name="menu_about"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(170, 170, 255);
+background-color: rgb(213, 213, 213);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actFile_New"/>
+   <addaction name="separator"/>
+   <addaction name="actFile_Save"/>
+   <addaction name="actFile_SaveAsExcl"/>
+   <addaction name="separator"/>
+   <addaction name="actQuery"/>
+   <addaction name="actQuery_Export"/>
+   <addaction name="separator"/>
+   <addaction name="actSet_Customer"/>
+   <addaction name="separator"/>
+   <addaction name="actSet_Material"/>
+   <addaction name="actSet_Process"/>
+   <addaction name="actSet_Pack"/>
+   <addaction name="separator"/>
+   <addaction name="actSet_Sort"/>
+   <addaction name="separator"/>
+   <addaction name="actFile_LogOff"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actFile_New">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/建单.png</normaloff>:/ico/resources/ICO/建单.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="toolTip">
+    <string>新建原价单</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actQuery_Edit">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/查询1.png</normaloff>:/ico/resources/ICO/查询1.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询修改</string>
+   </property>
+   <property name="toolTip">
+    <string>查询及可以修改相关数据</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actQuery">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/查询3.png</normaloff>:/ico/resources/ICO/查询3.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+   <property name="toolTip">
+    <string>仅查询功能</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actQuery_Update">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/查询2.png</normaloff>:/ico/resources/ICO/查询2.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询上传</string>
+   </property>
+   <property name="toolTip">
+    <string>查询及可上传文档</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actSet_Customer">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/客户管理.png</normaloff>:/ico/resources/ICO/客户管理.png</iconset>
+   </property>
+   <property name="text">
+    <string>客户表维护</string>
+   </property>
+   <property name="toolTip">
+    <string>数据库客户表维护</string>
+   </property>
+  </action>
+  <action name="actSet_Material">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/材料.png</normaloff>:/ico/resources/ICO/材料.png</iconset>
+   </property>
+   <property name="text">
+    <string>材料表维护</string>
+   </property>
+   <property name="toolTip">
+    <string>数据库材料表维护</string>
+   </property>
+  </action>
+  <action name="actSet_Process">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/加工.png</normaloff>:/ico/resources/ICO/加工.png</iconset>
+   </property>
+   <property name="text">
+    <string>加工表维护</string>
+   </property>
+   <property name="toolTip">
+    <string>数据库加工表维护</string>
+   </property>
+  </action>
+  <action name="actSet_Pack">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/包装.png</normaloff>:/ico/resources/ICO/包装.png</iconset>
+   </property>
+   <property name="text">
+    <string>包装表维护</string>
+   </property>
+   <property name="toolTip">
+    <string>数据库包装表维护</string>
+   </property>
+  </action>
+  <action name="actFile_Save">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/保存.png</normaloff>:/ico/resources/ICO/保存.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存到数据库</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actFile_SaveAsExcl">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/EXCEL.png</normaloff>:/ico/resources/ICO/EXCEL.png</iconset>
+   </property>
+   <property name="text">
+    <string>输出</string>
+   </property>
+   <property name="toolTip">
+    <string>输出为Excel文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actFile_LogOff">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/退出.png</normaloff>:/ico/resources/ICO/退出.png</iconset>
+   </property>
+   <property name="text">
+    <string>注销</string>
+   </property>
+   <property name="toolTip">
+    <string>注销登录并返回登录界面</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actHelp_About">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/关于.png</normaloff>:/ico/resources/ICO/关于.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actSet_Sort">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/分类.png</normaloff>:/ico/resources/ICO/分类.png</iconset>
+   </property>
+   <property name="text">
+    <string>分类表维护</string>
+   </property>
+   <property name="toolTip">
+    <string>数据库分类表维护_包含多个表</string>
+   </property>
+  </action>
+  <action name="actQuery_Export">
+   <property name="icon">
+    <iconset resource="main_resources.qrc">
+     <normaloff>:/ico/resources/ICO/导出文件.png</normaloff>:/ico/resources/ICO/导出文件.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出到文件</string>
+   </property>
+   <property name="toolTip">
+    <string>导出查询的原价单数据到文件</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="main_resources.qrc"/>
+  <include location="image_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

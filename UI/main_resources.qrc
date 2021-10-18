@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="ico">
+    <file>resources/ICO/导出文件.png</file>
+    <file>resources/ICO/数据显示.png</file>
+    <file>resources/ICO/编辑.png</file>
+    <file>resources/ICO/产品图片显示.png</file>
+    <file>resources/ICO/放大.png</file>
+    <file>resources/ICO/分类.png</file>
+    <file>resources/ICO/缩小.png</file>
+    <file>resources/ICO/退出.png</file>
+    <file>resources/ICO/右旋.png</file>
+    <file>resources/ICO/左旋.png</file>
+    <file>resources/ICO/Login.png</file>
+    <file>resources/ICO/MainWindow.png</file>
+    <file>resources/ICO/关于.png</file>
+    <file>resources/ICO/EXCEL.png</file>
+    <file>resources/ICO/包装.png</file>
+    <file>resources/ICO/保存.png</file>
+    <file>resources/ICO/材料.png</file>
+    <file>resources/ICO/查询1.png</file>
+    <file>resources/ICO/查询2.png</file>
+    <file>resources/ICO/查询3.png</file>
+    <file>resources/ICO/加工.png</file>
+    <file>resources/ICO/建单.png</file>
+    <file>resources/ICO/客户管理.png</file>
+    <file>resources/ICO/退出.png</file>
+  </qresource>
+</RCC>
