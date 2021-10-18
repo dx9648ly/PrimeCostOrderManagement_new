@@ -1,0 +1,5 @@
+# PrimeCostOrderManagement_new
+原价管理程序
+UI文件夹内是使用QTDesigner设计的原文件以及编译好的文件，包括其中所使用所资源（图标及图片）
+CODE文件夹内是程序中各个模块的Python代码文件
+main.py是主文件
